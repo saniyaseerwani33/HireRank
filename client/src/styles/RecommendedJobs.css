@@ -1,0 +1,170 @@
+/* ==========================================
+   Recommended Jobs
+========================================== */
+
+.recommended-page{
+    min-height:100vh;
+    background:#f5f7fb;
+    padding:40px 0;
+}
+
+.recommended-wrapper{
+    width:90%;
+    max-width:1200px;
+    margin:0 auto;
+}
+
+/* ---------- Actions ---------- */
+
+.recommended-actions{
+    display:flex;
+    justify-content:flex-start;
+    margin-bottom:25px;
+}
+
+.recommended-back-btn{
+    background:#2563eb;
+    color:#fff;
+    border:none;
+    padding:10px 20px;
+    border-radius:8px;
+    font-size:15px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.recommended-back-btn:hover{
+    background:#1d4ed8;
+}
+
+/* ---------- Content ---------- */
+
+.recommended-content{
+    background:#fff;
+    border-radius:16px;
+    padding:35px;
+    box-shadow:0 5px 18px rgba(0,0,0,.08);
+}
+
+.recommended-content h1{
+    text-align:center;
+    color:#1e3a8a;
+    margin-bottom:35px;
+}
+
+/* ---------- Cards ---------- */
+
+.recommended-jobs-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:25px;
+}
+
+.recommended-job-card{
+    background:#fff;
+    border:1px solid #e5e7eb;
+    border-radius:15px;
+    padding:25px;
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+    display:flex;
+    flex-direction:column;
+    transition:.3s;
+}
+
+.recommended-job-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 8px 22px rgba(0,0,0,.15);
+}
+
+.top-match{
+    border:2px solid #2563eb;
+}
+
+.rank-badge{
+    display:inline-block;
+    width:fit-content;
+    padding:6px 14px;
+    border-radius:20px;
+    font-size:14px;
+    font-weight:600;
+    margin-bottom:15px;
+}
+
+.gold{
+    background:#fef3c7;
+    color:#b45309;
+}
+
+.silver{
+    background:#e0e7ff;
+    color:#4338ca;
+}
+
+.bronze{
+    background:#dcfce7;
+    color:#166534;
+}
+
+.recommended-job-card h2{
+    color:#2563eb;
+    margin-bottom:15px;
+}
+
+.recommended-job-card p{
+    margin:8px 0;
+    color:#374151;
+    line-height:1.5;
+}
+
+.recommended-job-card h3{
+    color:#16a34a;
+    margin:18px 0;
+}
+
+/* ---------- Buttons ---------- */
+
+.apply-btn,
+.applied-btn{
+    margin-top:auto;
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    font-size:15px;
+    font-weight:600;
+}
+
+.apply-btn{
+    background:#2563eb;
+    color:#fff;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.apply-btn:hover{
+    background:#1d4ed8;
+}
+
+.applied-btn{
+    background:#dcfce7;
+    color:#166534;
+    cursor:not-allowed;
+}
+
+/* ---------- Responsive ---------- */
+
+@media(max-width:768px){
+
+    .recommended-wrapper{
+        width:95%;
+    }
+
+    .recommended-content{
+        padding:25px;
+    }
+
+    .recommended-content h1{
+        font-size:28px;
+    }
+}

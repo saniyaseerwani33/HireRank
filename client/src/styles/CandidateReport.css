@@ -1,0 +1,238 @@
+.report-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #f8fafc;
+}
+
+.report-title {
+  text-align: center;
+  color: #1e3a8a;
+  margin-bottom: 30px;
+}
+
+.report-card {
+  background: white;
+  padding: 25px;
+  margin-bottom: 25px;
+  border-radius: 14px;
+  box-shadow: 0 4px 15px rgba(0,0,0,.08);
+}
+
+.report-card h2 {
+  color: #2563eb;
+  margin-bottom: 15px;
+}
+
+.report-card ul {
+  padding-left: 20px;
+}
+
+.report-card li {
+  margin-bottom: 8px;
+}
+
+.skill-chip {
+  display: inline-block;
+  margin: 6px;
+  padding: 8px 14px;
+  background: #dbeafe;
+  color: #1d4ed8;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.score-box {
+  width: 180px;
+  margin: 20px auto;
+}
+
+.report-back-btn {
+  display: inline-block;
+  width: auto;
+  padding: 10px 20px;
+  margin-bottom: 25px;
+
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  transition: 0.3s;
+}
+
+.report-back-btn:hover {
+  background: #1d4ed8;
+}
+
+.report-header {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.report-header h1 {
+  color: #1e3a8a;
+  margin-bottom: 10px;
+}
+
+.report-header p {
+  color: #64748b;
+  font-size: 16px;
+}
+
+.report-header hr {
+  margin-top: 25px;
+  border: none;
+  border-top: 2px solid #e5e7eb;
+}
+
+.score-card {
+  text-align: center;
+}
+
+.score-status {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.score-status.excellent {
+  color: #16a34a;
+}
+
+.score-status.good {
+  color: #ca8a04;
+}
+
+.score-status.poor {
+  color: #dc2626;
+}
+
+.score-description {
+  margin-top: 12px;
+  color: #64748b;
+  line-height: 1.6;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.report-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.report-download-btn {
+  background: #16a34a;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.report-download-btn:hover {
+  background: #15803d;
+}
+
+.report-card,
+.score-card,
+.report-header {
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.report-container {
+  background: white;
+}
+
+@media print {
+  .back-btn,
+  .download-btn {
+    display: none;
+  }
+}
+.report-actions{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+}
+
+@media print{
+    .report-actions{
+        display:none !important;
+    }
+}
+.report-card h2 {
+  color: #2563eb;
+}
+
+.score-card {
+  border-top: 5px solid #22c55e;
+}
+.report-card {
+  background: white;
+  padding: 25px;
+  margin-bottom: 25px;
+  border-radius: 14px;
+  box-shadow: 0 4px 15px rgba(0,0,0,.08);
+  border-left: 5px solid #3b82f6;
+}
+.skill-chip {
+  background: #dbeafe;
+  color: #1e3a8a;
+}
+
+.report-card ul li {
+  margin-bottom: 8px;
+}
+.score-card {
+  border-left: 5px solid #22c55e;
+}
+
+.keyword-card {
+  border-left: 5px solid #f59e0b;
+}
+
+.strength-card {
+  border-left: 5px solid #22c55e;
+}
+
+.weakness-card {
+  border-left: 5px solid #ef4444;
+}
+
+.suggestion-card {
+  border-left: 5px solid #3b82f6;
+}
+
+.recommendation-card{
+    border-left:8px solid;
+    transition:0.3s;
+}
+
+.recommendation-card{
+    border-left:8px solid;
+    background:#ffffff;
+    transition:0.3s;
+}
+
+.excellent-card{
+    border-color:#22c55e;
+}
+
+.good-card{
+    border-color:#f59e0b;
+}
+
+.poor-card{
+    border-color:#ef4444;
+}

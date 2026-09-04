@@ -1,0 +1,108 @@
+.applications-container{
+    min-height:100vh;
+    background:#f5f7fb;
+    padding:40px 0;
+}
+
+.applications-content{
+    width:90%;
+    max-width:1200px;
+    margin:0 auto;
+}
+
+.applications-header{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.applications-header h1{
+    margin: 0;
+    color: #1f2937;
+    font-size: 2rem;
+}
+
+.back-btn{
+    position: absolute;
+    left: 0;
+    background: #2563eb;
+    color: #fff;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.back-btn:hover{
+    background: #1d4ed8;
+}
+
+.applications-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:25px;
+}
+.applications-content h1{
+    margin-bottom:30px;
+    color:#1f2937;
+}
+
+
+.application-card{
+    background:white;
+    border-radius:15px;
+    padding:25px;
+    box-shadow:0 5px 18px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.application-card:hover{
+    transform:translateY(-5px);
+}
+
+.application-card h2{
+    color:#2563eb;
+    margin-bottom:15px;
+}
+
+.application-card p{
+    margin:10px 0;
+    color:#374151;
+}
+
+.empty-card{
+    background:white;
+    padding:40px;
+    text-align:center;
+    border-radius:15px;
+    box-shadow:0 5px 18px rgba(0,0,0,.08);
+}
+
+.status{
+    display:inline-block;
+    margin-left:10px;
+    padding:5px 12px;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:600;
+    color:#fff;
+}
+
+.status.pending{
+    background:#facc15;
+    color:#000;
+}
+
+.status.accepted{
+    background:#22c55e;
+    color:#fff;
+}
+
+.status.rejected{
+    background:#ef4444;
+    color:#fff;
+}

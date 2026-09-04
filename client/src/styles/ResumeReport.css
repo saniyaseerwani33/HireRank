@@ -1,0 +1,202 @@
+/* ===========================================
+   Resume Report - Student
+=========================================== */
+
+.resume-page {
+  min-height: 100vh;
+  background: #f5f7fb;
+  padding: 40px 0;
+}
+
+.resume-wrapper {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.resume-container {
+  width: 100%;
+  background: #fff;
+  border-radius: 15px;
+  padding: 35px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+}
+
+/* ---------- Action Buttons ---------- */
+
+.resume-actions {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.resume-back-btn,
+.resume-download-btn {
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.resume-back-btn {
+  background: #2563eb;
+  color: #fff;
+}
+
+.resume-back-btn:hover {
+  background: #1d4ed8;
+}
+
+.resume-download-btn {
+  background: #16a34a;
+  color: #fff;
+}
+
+.resume-download-btn:hover {
+  background: #15803d;
+}
+
+/* ---------- Header ---------- */
+
+.resume-header {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.resume-header h1 {
+  color: #1e3a8a;
+  margin-bottom: 10px;
+}
+
+.resume-header p {
+  color: #64748b;
+}
+
+.resume-header hr {
+  margin-top: 20px;
+  border: none;
+  border-top: 2px solid #e5e7eb;
+}
+
+/* ---------- Cards ---------- */
+
+.resume-card {
+  background: #fff;
+  border-left: 5px solid #3b82f6;
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.resume-card h2 {
+  color: #2563eb;
+  margin-bottom: 15px;
+}
+
+.resume-card ul {
+  padding-left: 20px;
+}
+
+.resume-card li {
+  margin-bottom: 8px;
+}
+
+/* ---------- ATS Score ---------- */
+
+.resume-score-card {
+  text-align: center;
+  border-left-color: #22c55e;
+}
+
+.resume-score-box {
+  width: 180px;
+  margin: 20px auto;
+}
+
+.resume-score-status {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.resume-score-status.excellent {
+  color: #22c55e;
+}
+
+.resume-score-status.good {
+  color: #f59e0b;
+}
+
+.resume-score-status.poor {
+  color: #ef4444;
+}
+
+.resume-score-description {
+  margin-top: 12px;
+  color: #64748b;
+  line-height: 1.6;
+}
+
+/* ---------- Skill Chips ---------- */
+
+.resume-skill-chip {
+  display: inline-block;
+  margin: 6px;
+  padding: 8px 14px;
+  background: #dbeafe;
+  color: #1d4ed8;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* ---------- Colored Cards ---------- */
+
+.resume-keyword-card {
+  border-left-color: #f59e0b;
+}
+
+.resume-strength-card {
+  border-left-color: #22c55e;
+}
+
+.resume-weakness-card {
+  border-left-color: #ef4444;
+}
+
+.resume-suggestion-card {
+  border-left-color: #2563eb;
+}
+
+/* ---------- Print ---------- */
+
+@media print {
+
+  .resume-actions {
+    display: none !important;
+  }
+
+  .resume-page {
+    background: #fff;
+    padding: 0;
+  }
+
+  .resume-wrapper {
+    width: 100%;
+    max-width: none;
+  }
+
+  .resume-container {
+    box-shadow: none;
+    padding: 0;
+    border-radius: 0;
+  }
+}
