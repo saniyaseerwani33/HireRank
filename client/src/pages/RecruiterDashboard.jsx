@@ -10,6 +10,10 @@ function RecruiterDashboard() {
   localStorage.getItem("recruiter") ||
   sessionStorage.getItem("recruiter")
 );
+if (!recruiter) {
+  navigate("/recruiter-login");
+  return null;
+}
   const navigate = useNavigate();
 
 
