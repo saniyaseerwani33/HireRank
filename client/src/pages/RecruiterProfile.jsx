@@ -2,7 +2,19 @@ import { Link } from "react-router-dom";
 import "../styles/RecruiterProfile.css";
 
 function RecruiterProfile() {
-  const recruiter = JSON.parse(localStorage.getItem("recruiter"));
+  const recruiter = JSON.parse(
+  localStorage.getItem("recruiter") ||
+  sessionStorage.getItem("recruiter")
+);
+
+if (!recruiter) {
+  return (
+    <div>
+      <h2>No recruiter data found.</h2>
+      <Link to="/recruiter-login">Go to Login</Link>
+    </div>
+  );
+}
 
   return (
     <div className="recruiter-profile-page">

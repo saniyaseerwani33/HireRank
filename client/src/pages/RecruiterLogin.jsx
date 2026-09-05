@@ -8,13 +8,13 @@ function RecruiterLogin() {
   const navigate = useNavigate();
   useEffect(() => {
   const recruiter = JSON.parse(
-    localStorage.getItem("recruiter") ||
-    sessionStorage.getItem("recruiter")
-  );
+  localStorage.getItem("recruiter") ||
+  sessionStorage.getItem("recruiter")
+);
 
-  if (recruiter) {
-    navigate("/recruiter-dashboard");
-  }
+if (!recruiter) {
+  return <h2>No recruiter data found. Please log in again.</h2>;
+}
 }, [navigate]);
   const [showPassword, setShowPassword] = useState(false);
 const [email, setEmail] = useState("");
