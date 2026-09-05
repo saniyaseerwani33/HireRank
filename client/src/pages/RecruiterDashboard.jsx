@@ -37,9 +37,16 @@ if (!recruiter) {
 
 
   useEffect(() => {
-    fetchApplications();
-    fetchJobsPosted();
-  }, []);
+  fetchApplications();
+  fetchJobsPosted();
+
+  const interval = setInterval(() => {
+    fetchApplications();
+    fetchJobsPosted();
+  }, 5000); // Refresh every 5 seconds
+
+  return () => clearInterval(interval);
+}, []);
 
 
   const fetchApplications = async () => {
